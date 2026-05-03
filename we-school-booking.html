@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE School | Booking</title>
+    <link rel="stylesheet" href="./we-school.css">
+</head>
+<body class="theme-booking">
+    <div class="page-shell">
+        <header class="site-header compact-header">
+            <nav class="navbar container">
+                <a class="brand" href="./we-school.html">
+                    <span class="brand-mark">W</span>
+                    <div>
+                        <strong>WE School</strong>
+                        <small>Visit Booking</small>
+                    </div>
+                </a>
+
+                <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-panel">
+                    <ul class="nav-links">
+                        <li><a href="./we-school.html">Home</a></li>
+                        <li><a href="./we-school-login.html">Login</a></li>
+                        <li><a href="./we-school-registration.html">Registration</a></li>
+                        <li><a class="active" href="./we-school-booking.html">Booking</a></li>
+                    </ul>
+                    <a class="nav-cta" href="./we-school-registration.html">Apply First</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="section">
+            <div class="container booking-layout">
+                <section class="booking-copy reveal">
+                    <p class="eyebrow">Campus Visit Booking</p>
+                    <h1>Reserve your meeting, tour, or consultation with a smoother experience.</h1>
+                    <p>
+                        The form below is redesigned to feel structured, readable, and exciting.
+                        It works as a complete frontend booking page ready for future backend integration.
+                    </p>
+
+                    <div class="booking-highlights">
+                        <article>
+                            <strong>Choose department</strong>
+                            <span>Select the path that matches your interest.</span>
+                        </article>
+                        <article>
+                            <strong>Pick a date</strong>
+                            <span>Reserve the time that suits your visit plan.</span>
+                        </article>
+                        <article>
+                            <strong>Share your goals</strong>
+                            <span>Help the team prepare the best experience for you.</span>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="glass form-panel wide-panel reveal delay-1">
+                    <form class="styled-form grid-form" data-demo-form>
+                        <div>
+                            <label for="booking-name">Full Name</label>
+                            <input id="booking-name" name="booking-name" type="text" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div>
+                            <label for="booking-email">Email Address</label>
+                            <input id="booking-email" name="booking-email" type="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div>
+                            <label for="booking-phone">Phone Number</label>
+                            <input id="booking-phone" name="booking-phone" type="tel" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <div>
+                            <label for="booking-date">Preferred Date</label>
+                            <input id="booking-date" name="booking-date" type="date" required>
+                        </div>
+
+                        <div>
+                            <label for="visit-type">Visit Type</label>
+                            <select id="visit-type" name="visit-type" required>
+                                <option value="">Choose visit type</option>
+                                <option>Campus Tour</option>
+                                <option>Admission Meeting</option>
+                                <option>Department Consultation</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="booking-department">Department</label>
+                            <select id="booking-department" name="booking-department" required>
+                                <option value="">Choose department</option>
+                                <option>Programming</option>
+                                <option>Networking</option>
+                                <option>Telecommunications</option>
+                            </select>
+                        </div>
+
+                        <div class="full-span">
+                            <label>Areas of Interest</label>
+                            <div class="check-grid compact-grid">
+                                <label class="check-card">
+                                    <input type="checkbox" name="interest" value="frontend">
+                                    <span>
+                                        <strong>Programming</strong>
+                                        <small>Projects, coding, and problem solving</small>
+                                    </span>
+                                </label>
+                                <label class="check-card">
+                                    <input type="checkbox" name="interest" value="networks">
+                                    <span>
+                                        <strong>Networks</strong>
+                                        <small>Infrastructure and security basics</small>
+                                    </span>
+                                </label>
+                                <label class="check-card">
+                                    <input type="checkbox" name="interest" value="telecom">
+                                    <span>
+                                        <strong>Telecom</strong>
+                                        <small>Communication systems and innovation</small>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="full-span">
+                            <label>Gender</label>
+                            <div class="radio-group">
+                                <label class="choice-pill">
+                                    <input type="radio" name="gender" value="male">
+                                    <span>Male</span>
+                                </label>
+                                <label class="choice-pill">
+                                    <input type="radio" name="gender" value="female">
+                                    <span>Female</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="full-span">
+                            <label for="booking-file">Upload Supporting File</label>
+                            <input id="booking-file" name="booking-file" type="file">
+                        </div>
+
+                        <div class="full-span">
+                            <label for="booking-message">Message</label>
+                            <textarea id="booking-message" name="booking-message" placeholder="Share any details or questions before your visit."></textarea>
+                        </div>
+
+                        <div class="full-span action-row">
+                            <button class="btn btn-primary" type="submit">Submit Booking</button>
+                            <a class="btn btn-secondary" href="./we-school.html">Back To Home</a>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <a class="brand footer-brand" href="./we-school.html">
+                    <span class="brand-mark">W</span>
+                    <div>
+                        <strong>WE School</strong>
+                        <small>Modern frontend concept</small>
+                    </div>
+                </a>
+                <div class="footer-links">
+                    <a href="./we-school.html">Home</a>
+                    <a href="./we-school-registration.html">Registration</a>
+                    <a href="./we-school-booking.html">Booking</a>
+                    <a href="./we-school-login.html">Login</a>
+                </div>
+                <p class="footer-copy">Copyright <span id="year"></span> WE School. Book a visit with a cleaner flow.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./we-school.js"></script>
+</body>
+</html>

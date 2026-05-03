@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE School | Registration</title>
+    <link rel="stylesheet" href="./we-school.css">
+</head>
+<body class="theme-auth">
+    <div class="page-shell">
+        <header class="site-header compact-header">
+            <nav class="navbar container">
+                <a class="brand" href="./we-school.html">
+                    <span class="brand-mark">W</span>
+                    <div>
+                        <strong>WE School</strong>
+                        <small>Student Registration</small>
+                    </div>
+                </a>
+
+                <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-panel">
+                    <ul class="nav-links">
+                        <li><a href="./we-school.html">Home</a></li>
+                        <li><a href="./we-school-login.html">Login</a></li>
+                        <li><a class="active" href="./we-school-registration.html">Registration</a></li>
+                        <li><a href="./we-school-booking.html">Booking</a></li>
+                    </ul>
+                    <a class="nav-cta" href="./we-school-booking.html">Book A Visit</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="section">
+            <div class="container registration-shell">
+                <section class="section-heading reveal align-left">
+                    <p class="eyebrow">Application Form</p>
+                    <h1>Apply to WE School through a full, polished registration experience.</h1>
+                    <p>
+                        This upgraded form feels modern and professional while staying easy to complete on desktop
+                        and mobile. It is designed for strong usability and visual clarity.
+                    </p>
+                </section>
+
+                <section class="glass form-panel wide-panel reveal delay-1">
+                    <form class="styled-form grid-form" data-demo-form>
+                        <div>
+                            <label for="first-name">First Name</label>
+                            <input id="first-name" name="first-name" type="text" placeholder="First name" required>
+                        </div>
+
+                        <div>
+                            <label for="last-name">Last Name</label>
+                            <input id="last-name" name="last-name" type="text" placeholder="Last name" required>
+                        </div>
+
+                        <div>
+                            <label for="student-email">Email Address</label>
+                            <input id="student-email" name="student-email" type="email" placeholder="student@email.com" required>
+                        </div>
+
+                        <div>
+                            <label for="student-phone">Phone Number</label>
+                            <input id="student-phone" name="student-phone" type="tel" placeholder="+20 1X XXX XXXX" required>
+                        </div>
+
+                        <div>
+                            <label for="grade-level">Current Grade</label>
+                            <select id="grade-level" name="grade-level" required>
+                                <option value="">Select grade</option>
+                                <option>Preparatory 3</option>
+                                <option>Secondary 1</option>
+                                <option>Secondary 2</option>
+                                <option>Secondary 3</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="department-choice">Preferred Department</label>
+                            <select id="department-choice" name="department-choice" required>
+                                <option value="">Choose a department</option>
+                                <option>Programming</option>
+                                <option>Networking</option>
+                                <option>Telecommunications</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="student-password">Password</label>
+                            <div class="password-wrap">
+                                <input id="student-password" name="student-password" type="password" placeholder="Create a strong password" required>
+                                <button class="ghost-button password-toggle" type="button" data-password-toggle="#student-password">Show</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="confirm-password">Confirm Password</label>
+                            <div class="password-wrap">
+                                <input id="confirm-password" name="confirm-password" type="password" placeholder="Repeat your password" required>
+                                <button class="ghost-button password-toggle" type="button" data-password-toggle="#confirm-password">Show</button>
+                            </div>
+                        </div>
+
+                        <div class="full-span">
+                            <label for="student-message">Why do you want to join WE School?</label>
+                            <textarea id="student-message" name="student-message" placeholder="Tell us about your interests, goals, or motivation."></textarea>
+                        </div>
+
+                        <div class="full-span check-grid">
+                            <label class="check-card">
+                                <input type="checkbox" name="focus-area" value="coding">
+                                <span>
+                                    <strong>Coding</strong>
+                                    <small>Web, apps, and programming logic</small>
+                                </span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="focus-area" value="networks">
+                                <span>
+                                    <strong>Networks</strong>
+                                    <small>Infrastructure, routing, and support</small>
+                                </span>
+                            </label>
+                            <label class="check-card">
+                                <input type="checkbox" name="focus-area" value="telecom">
+                                <span>
+                                    <strong>Telecom</strong>
+                                    <small>Communication systems and smart tech</small>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="full-span form-row inline-row">
+                            <label class="check-option">
+                                <input type="checkbox" required>
+                                <span>I agree to the registration terms and student guidelines.</span>
+                            </label>
+                        </div>
+
+                        <div class="full-span action-row">
+                            <button class="btn btn-primary" type="submit">Create Account</button>
+                            <a class="btn btn-secondary" href="./we-school-login.html">Already have an account?</a>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <a class="brand footer-brand" href="./we-school.html">
+                    <span class="brand-mark">W</span>
+                    <div>
+                        <strong>WE School</strong>
+                        <small>Modern frontend concept</small>
+                    </div>
+                </a>
+                <div class="footer-links">
+                    <a href="./we-school.html">Home</a>
+                    <a href="./we-school-registration.html">Registration</a>
+                    <a href="./we-school-booking.html">Booking</a>
+                    <a href="./we-school-login.html">Login</a>
+                </div>
+                <p class="footer-copy">Copyright <span id="year"></span> WE School. Registration with a better first impression.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./we-school.js"></script>
+</body>
+</html>

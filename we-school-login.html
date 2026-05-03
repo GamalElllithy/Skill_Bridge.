@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE School | Login</title>
+    <link rel="stylesheet" href="./we-school.css">
+</head>
+<body class="theme-auth">
+    <div class="page-shell">
+        <header class="site-header compact-header">
+            <nav class="navbar container">
+                <a class="brand" href="./we-school.html">
+                    <span class="brand-mark">W</span>
+                    <div>
+                        <strong>WE School</strong>
+                        <small>Student Access</small>
+                    </div>
+                </a>
+
+                <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="nav-panel">
+                    <ul class="nav-links">
+                        <li><a href="./we-school.html">Home</a></li>
+                        <li><a class="active" href="./we-school-login.html">Login</a></li>
+                        <li><a href="./we-school-registration.html">Registration</a></li>
+                        <li><a href="./we-school-booking.html">Booking</a></li>
+                    </ul>
+                    <a class="nav-cta" href="./we-school-registration.html">Join Now</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="auth-main section">
+            <div class="container auth-layout">
+                <section class="auth-copy reveal">
+                    <p class="eyebrow">Welcome Back</p>
+                    <h1>Log in to continue your WE School journey.</h1>
+                    <p>
+                        Access student tools, review your schedule, and keep your learning journey moving with
+                        a cleaner, more modern sign-in experience.
+                    </p>
+
+                    <div class="benefit-list">
+                        <article>
+                            <strong>Fast access</strong>
+                            <span>Enter your dashboard in seconds with a clear login interface.</span>
+                        </article>
+                        <article>
+                            <strong>Clean hierarchy</strong>
+                            <span>Important content stands out without distraction or clutter.</span>
+                        </article>
+                        <article>
+                            <strong>Premium feel</strong>
+                            <span>The whole page matches the upgraded visual style of the site.</span>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="form-panel glass reveal delay-1">
+                    <div class="form-header">
+                        <p class="eyebrow">Student Login</p>
+                        <h2>Sign in to your account</h2>
+                    </div>
+
+                    <form class="styled-form" data-demo-form>
+                        <label for="login-email">Email or Username</label>
+                        <input id="login-email" name="login-email" type="text" placeholder="Enter your email or username" required>
+
+                        <label for="login-password">Password</label>
+                        <div class="password-wrap">
+                            <input id="login-password" name="login-password" type="password" placeholder="Enter your password" required>
+                            <button class="ghost-button password-toggle" type="button" data-password-toggle="#login-password">Show</button>
+                        </div>
+
+                        <div class="form-row inline-row">
+                            <label class="check-option">
+                                <input type="checkbox" name="remember">
+                                <span>Remember me</span>
+                            </label>
+                            <a class="text-link" href="./we-school-registration.html">Need an account?</a>
+                        </div>
+
+                        <button class="btn btn-primary full-width" type="submit">Login</button>
+                        <p class="form-note">Frontend demo only. You can connect this form to a backend later.</p>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <a class="brand footer-brand" href="./we-school.html">
+                    <span class="brand-mark">W</span>
+                    <div>
+                        <strong>WE School</strong>
+                        <small>Modern frontend concept</small>
+                    </div>
+                </a>
+                <div class="footer-links">
+                    <a href="./we-school.html">Home</a>
+                    <a href="./we-school-registration.html">Registration</a>
+                    <a href="./we-school-booking.html">Booking</a>
+                    <a href="./we-school-login.html">Login</a>
+                </div>
+                <p class="footer-copy">Copyright <span id="year"></span> WE School. Smooth access starts here.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./we-school.js"></script>
+</body>
+</html>

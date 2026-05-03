@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="لوحة تحكم الطالب في SkillBridge لمتابعة المسار، المهارات، التقدم، والفرص المناسبة.">
+  <title>SkillBridge | Student Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/svg+xml" href="assets/img/skillbridge-mark.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="student-dashboard.css">
+</head>
+<body>
+  <header class="student-topbar" id="studentTopbar">
+    <div class="topbar-shell">
+      <a class="brand" href="student-dashboard.html" aria-label="SkillBridge">
+        <span class="brand-mark">
+          <img src="assets/img/skillbridge-mark.svg" alt="">
+        </span>
+        <span class="brand-copy">
+          <strong>SkillBridge</strong>
+          <small>Student Dashboard</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" data-menu-toggle aria-label="فتح القائمة" aria-expanded="false" aria-controls="topbarLinks topbarActions">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="topbar-links" id="topbarLinks">
+        <a class="active" href="student-dashboard.html">Dashboard</a>
+        <a href="learning-path.html">Learning Path</a>
+        <a href="smart-jobs.html">Smart Jobs</a>
+        <a href="candidate-passport.html">Passport</a>
+      </nav>
+
+      <div class="topbar-actions" id="topbarActions">
+        <div class="dropdown-host">
+          <button class="icon-btn has-badge" id="studentNotificationsTrigger" type="button" data-dropdown-trigger="notificationsDropdown" data-badge="0" aria-label="الإشعارات" aria-expanded="false">
+            <span class="icon-bell" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M18 9.6c0-3.2-2.1-5.6-5.1-6.1V2h-1.8v1.5C8.1 4 6 6.4 6 9.6v3.2l-1.7 2.7v.9h15.4v-.9L18 12.8V9.6Z"/>
+                <path d="M9.7 18.2a2.4 2.4 0 0 0 4.6 0"/>
+              </svg>
+            </span>
+          </button>
+          <div class="dropdown-panel" id="notificationsDropdown">
+            <strong>آخر التحديثات</strong>
+            <div class="dropdown-notifications" id="studentNotificationsList"></div>
+          </div>
+        </div>
+
+        <div class="dropdown-host">
+          <button class="profile-btn" type="button" data-dropdown-trigger="profileDropdown" aria-expanded="false">
+            <span class="avatar-sm" id="topbarAvatar">ST</span>
+            <span id="topbarName">Student</span>
+          </button>
+          <div class="dropdown-panel" id="profileDropdown">
+            <strong>حسابي</strong>
+            <a class="profile-quick-action" href="talent-dna.html">
+              <strong>Talent DNA</strong>
+              <span>راجع قوتك وفجواتك بسرعة</span>
+            </a>
+            <a class="profile-quick-action" href="candidate-passport.html">
+              <strong>Candidate Passport</strong>
+              <span>حدّث ملفك قبل التقديم</span>
+            </a>
+            <a class="profile-quick-action" href="student-auth.html">
+              <strong>تسجيل الخروج</strong>
+              <span>ارجع لصفحة الدخول</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard-page">
+    <div class="dashboard-shell">
+      <section class="main-content">
+        <section class="hero-card hero-card-clean reveal">
+          <div class="hero-copy">
+            <span class="section-tag" id="welcomeTag">Welcome Back</span>
+            <h1 id="welcomeTitle">أهلًا يا صديقنا</h1>
+            <p id="welcomeCopy">لوحة مختصرة وواضحة: اعرف مستواك، شوف الخطوة التالية، واتحرك من غير زحمة.</p>
+          </div>
+
+          <div class="hero-actions">
+            <a class="primary-btn" href="learning-path.html" id="heroPrimaryAction">ابدأ الخطوة التالية</a>
+            <a class="ghost-btn" href="talent-dna.html" id="heroSecondaryAction">راجع Talent DNA</a>
+          </div>
+        </section>
+
+        <section class="journey-guide journey-guide-compact reveal">
+          <article class="journey-step is-done">
+            <span>1</span>
+            <strong>اكتشاف المسار</strong>
+          </article>
+          <article class="journey-step is-active">
+            <span>2</span>
+            <strong>بناء المهارات</strong>
+          </article>
+          <article class="journey-step">
+            <span>3</span>
+            <strong>التقديم</strong>
+          </article>
+        </section>
+
+        <section class="snapshot-grid reveal">
+          <article class="snapshot-card snapshot-card-wide">
+            <div class="card-head">
+              <div>
+                <span class="section-tag">Talent Snapshot</span>
+                <h2 id="snapshotTitle">أنت أقرب إلى Data Analysis</h2>
+              </div>
+              <span class="match-pill" id="snapshotMatch">82%</span>
+            </div>
+            <p id="snapshotCopy">المسار الأقرب ليك بيعتمد على التحليل، حل المشكلات، وتحويل البيانات لقرارات واضحة.</p>
+            <div class="progress-box">
+              <div class="progress-head">
+                <strong>Journey Progress</strong>
+                <span id="journeyProgressCopy">60%</span>
+              </div>
+              <div class="progress-track large" aria-hidden="true">
+                <span id="journeyProgressBar" style="width: 60%"></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="snapshot-card">
+            <span class="section-tag">Next Best Step</span>
+            <strong id="nextStepTitle">تعلم Python</strong>
+            <p id="nextStepCopy">خطوة واحدة واضحة ترفع فرصك أسرع.</p>
+            <a class="primary-btn" href="learning-path.html" id="nextStepAction">ابدأ الخطوة التالية</a>
+          </article>
+
+          <article class="snapshot-card">
+            <span class="section-tag">XP & Level</span>
+            <strong id="levelBadge">Level 2 - Explorer</strong>
+            <div class="progress-box">
+              <div class="progress-head">
+                <strong>XP Progress</strong>
+                <span id="xpProgressCopy">620 / 1000</span>
+              </div>
+              <div class="progress-track" aria-hidden="true">
+                <span id="xpProgressBar" style="width: 62%"></span>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="focus-grid reveal">
+          <article class="panel-card">
+            <div class="card-head">
+              <div>
+                <h3>Top Skills</h3>
+                <p>اضغط على أي مهارة عشان تخليها تركيزك اليوم.</p>
+              </div>
+              <span class="selection-counter" id="skillsSelectionCounter">Selected: 0 Skills</span>
+            </div>
+            <div class="skill-list" id="topSkillsList"></div>
+          </article>
+
+          <article class="panel-card">
+            <div class="card-head">
+              <div>
+                <h3>Skill Gaps</h3>
+                <p>اختار فجوة واحدة وابدأ بيها.</p>
+              </div>
+              <span class="selection-counter" id="gapsSelectionCounter">Selected: 0 Gaps</span>
+            </div>
+            <div class="gap-list" id="skillGapsList"></div>
+          </article>
+        </section>
+
+        <section class="decision-panel reveal" id="skillDecisionPanel">
+          <div>
+            <span class="section-tag">Auto Action</span>
+            <h3 id="decisionPanelTitle">اختار مهارة وشوف الخطوة تتغير</h3>
+            <p id="decisionPanelCopy">المهارات هنا مش labels. كل اختيار بيغير خطة التعلم والوظائف المقترحة.</p>
+          </div>
+          <div class="decision-actions">
+            <a class="primary-btn" href="learning-path.html" id="decisionPrimaryAction">افتح خطة التعلم</a>
+            <a class="ghost-btn" href="smart-jobs.html" id="decisionSecondaryAction">شوف الوظائف</a>
+          </div>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <div class="toast" id="studentDashboardToast"></div>
+
+  <script src="student-dashboard.js"></script>
+</body>
+</html>

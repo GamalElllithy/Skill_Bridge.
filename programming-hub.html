@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./programming-hub.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">ProgHub</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-md-center">
+          <li class="nav-item"><a class="nav-link" href="#fields">Fields</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-md-2 mt-3 mt-md-0">
+            <button id="darkModeBtn" class="btn btn-outline-light" type="button">Dark Mode</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6 text-center text-lg-start">
+            <span class="hero-badge">Start your coding journey</span>
+            <h1 class="hero-title mt-3 mb-3">Welcome to Programming World</h1>
+            <p class="hero-text mb-4">Learn modern technologies, practice real-world skills, and build a future-ready career in tech.</p>
+            <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+              <a class="btn btn-primary hero-btn" href="#fields">Explore Fields</a>
+              <a class="btn btn-outline-secondary hero-btn" href="#contact">Get in Touch</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-visual">
+              <img class="hero-img img-fluid" src="./programming-hub-hero-illustration.svg" alt="Illustration showing code and programming learning">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fields" class="section-space">
+      <div class="container">
+        <div class="section-heading text-center mb-5">
+          <p class="section-kicker">Main tracks</p>
+          <h2>Programming Fields</h2>
+          <p>Choose the path that matches your interests and the kind of products you want to build.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <article class="card field-card h-100 border-0">
+              <div class="card-body p-4">
+                <div class="field-icon">01</div>
+                <h5 class="mt-4">Web Development</h5>
+                <p class="mb-0">Build responsive websites and web apps with HTML, CSS, JavaScript, and Bootstrap.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <article class="card field-card h-100 border-0">
+              <div class="card-body p-4">
+                <div class="field-icon">02</div>
+                <h5 class="mt-4">Data Science</h5>
+                <p class="mb-0">Use Python, statistics, and visualization to turn raw data into useful insights.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <article class="card field-card h-100 border-0">
+              <div class="card-body p-4">
+                <div class="field-icon">03</div>
+                <h5 class="mt-4">Artificial Intelligence</h5>
+                <p class="mb-0">Learn machine learning concepts and discover how intelligent systems solve real problems.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-space contact-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="panel-box p-4 p-md-5">
+              <h4 class="mb-4">Contact Us</h4>
+
+              <form id="contactForm" novalidate>
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input type="text" id="fullName" class="form-control" placeholder="Enter your full name">
+                  <small class="error-text" id="nameError"></small>
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" id="email" class="form-control" placeholder="example@email.com">
+                  <small class="error-text" id="emailError"></small>
+                </div>
+
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" class="form-control" rows="5" placeholder="Tell us what you want to learn"></textarea>
+                  <small class="error-text" id="messageError"></small>
+                </div>
+
+                <button type="submit" class="btn btn-primary hero-btn">Send</button>
+                <p id="successMessage" class="success-text mt-3 mb-0" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="panel-box panel-highlight p-4 p-md-5 h-100">
+              <h4 class="mb-4">Why Learn Programming?</h4>
+              <ul class="benefits-list">
+                <li>Access high-demand careers across different industries.</li>
+                <li>Build creative solutions for real-life problems.</li>
+                <li>Develop future-proof skills that keep growing in value.</li>
+                <li>Work remotely and collaborate with teams worldwide.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./programming-hub.js"></script>
+</body>
+</html>
